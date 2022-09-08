@@ -6,7 +6,7 @@
 	<title>Сайт</title>
 </head>
 <body>
-
+<h2 align="center">Список ссылок</h2>
 <ol id="links">
 <li><a href="http://example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
 <li><a href="https://example.com">абсолютная на главную сайта example.com в протоколе https</a></li>
@@ -44,5 +44,126 @@
 <li><a href="index.html">сокращенная на главную</a></li>
 <li><a href="2.html">сокращенная ссылка на внутреннюю</a></li>
 </ol>
+<h2 align="center">Форма</h2>
+<form >
+      <label>
+        Имя <input name="field-name" placeholder="Введите ваше имя"/>
+      </label>
+      <br><br>
+
+      <label>
+        Email <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту"/>
+      </label>
+      <br><br>
+
+      <label>
+        Дата рождения <input name="field-date"
+        type="date" value="2022-09-06"/>
+      </label>
+      <br><br>
+
+      Количество конечностей <br>
+      <label><input type="radio"
+        name="radio-group-1"/>
+        0</label>
+      <label><input type="radio"
+        name="radio-group-1"/>
+        1</label>
+      <label><input type="radio"
+        name="radio-group-1"/>
+        2</label>
+        <label><input type="radio"
+        name="radio-group-1"/>
+        3</label>
+      <label><input type="radio" checked="checked"
+        name="radio-group-1"/>
+        4</label>
+        <label><input type="radio"
+        name="radio-group-1"/>
+        5</label>
+        <br><br>
+
+      <label>
+        Сверхспособности<br>
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="бессмертие">бессмертие</option>
+          <option value="прохождение сквозь стены">прохождение сквозь стены</option>
+          <option value="левитация">левитация</option>
+        </select>
+      </label>
+      <br><br>
+
+      <label>
+        Биография<br/>
+        <textarea name="field-name-2" placeholder="О себе"></textarea>
+      </label>
+      <br><br>
+
+      <label>
+        С контрактом ознакомлен(а)<input type="checkbox"
+        name="check-1" />
+      </label>
+      <br><br>
+
+        <input type="submit" value="Отправить"/>
+    </form>
+<footer><br>  
+  <center>(c) All rights reserved (false)</center>
+</footer>
+<style type="text/css">
+  li{
+    padding: 3px;
+  }
+	body{
+    margin: 0 0;
+		background-color: #707570;
+    font: 20px bold sans-serif;
+	}
+	form{
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    margin-inline: auto;
+    border: 1px solid black;
+	}
+  input:not([type~="submit"]){
+    outline: none;
+    margin-left : 10px;
+    border: none;
+    border-bottom: 1px solid black; 
+    background-color: transparent;
+  }
+  input[type="submit"]{
+    width: 7em;
+    height: 2em;
+    font: 20px bold sans-serif;
+    background-color: darkgreen;
+  }
+  input::placeholder{
+    color: darkgray;
+  }
+  select{
+    outline: none;
+    padding: 5px;
+    overflow-y: auto;
+    background-color: #A0A5A0;
+
+  }
+  textarea{
+    outline: none;
+    background-color: #A0A5A0;
+    width: 20em;
+    height: 5em;
+  }
+  footer{
+    margin-top: 50px;
+    background-color: black;
+    height: 100px;
+    color: grey;
+  }
+</style>
 </body>
 </html>
