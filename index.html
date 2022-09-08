@@ -31,10 +31,10 @@
 <li><p>контекстная в тексте <a href="http://htmlbook.ru/html/p">абзаца</a></p></li>
 <li><a href="images/image.jpg" title="ссылка-изображение"><img id="linkImg" src="images/image.jpg"></a></li>
 <li>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)<br>
-	<img id="mapImg" src="images/map.png" usemap="#linkArea">
+	<img id="mapImg" src="images/map.jpg" usemap="#linkArea" width="300" height="150">
 <map name="linkArea">
-	<area shape="rect" coords="25,25,150,140" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82">
-	<area shape="circle" coords="230,80,55" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
+	<area shape="rect" coords="10,10,140,150" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82">
+	<area shape="circle" coords="230,75,60" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
 </map>
 </li>
 <li><a href="2.html">относительная на страницу в текущем каталоге</a></li>
@@ -158,6 +158,7 @@
     max-width: 100%;
   }
   textarea{
+    padding: 5px;
     outline: none;
     background-color: #A0A5A0;
     width: 30%;
@@ -170,11 +171,11 @@
     height: 100px;
     color: grey;
   }
-  img{
+  #linkImg{
     width: 50%;
   }
   @media only screen and (max-width: 500px) {
-    img {
+    #linkImg {
       width: 100%;
     }
     form{
