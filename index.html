@@ -29,9 +29,9 @@
 <li><a href="https://example.com" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
 <li><noindex><a href="https://example.com">запрещенная для индексации поисковиками</a></noindex></li>
 <li><p>контекстная в тексте <a href="http://htmlbook.ru/html/p">абзаца</a></p></li>
-<li><a href="images/image.jpg" title="ссылка-изображение"><img src="images/image.jpg" width="200"></a></li>
+<li><a href="images/image.jpg" title="ссылка-изображение"><img id="linkImg" src="images/image.jpg"></a></li>
 <li>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)<br>
-	<img src="images/map.png" usemap="#linkArea" width="600">
+	<img id="mapImg" src="images/map.png" usemap="#linkArea">
 <map name="linkArea">
 	<area shape="rect" coords="25,25,150,140" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82">
 	<area shape="circle" coords="230,80,55" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
@@ -114,6 +114,10 @@
   <center>(c) All rights reserved (false)</center>
 </footer>
 <style type="text/css">
+  html{
+    width: auto;
+    height: auto;
+  }
   li{
     padding: 3px;
   }
@@ -121,12 +125,13 @@
     margin: 0 0;
 		background-color: #707570;
     font: 20px bold sans-serif;
+    width: auto;
+    height: auto;
 	}
 	form{
     padding: 20px;
     text-align: center;
-    width: 500px;
-    margin-inline: auto;
+    margin-inline: 20%;
     border: 1px solid black;
 	}
   input:not([type~="submit"]){
@@ -150,12 +155,13 @@
     padding: 5px;
     overflow-y: auto;
     background-color: #A0A5A0;
-
+    max-width: 100%;
   }
   textarea{
     outline: none;
     background-color: #A0A5A0;
-    width: 20em;
+    width: 30%;
+    max-width: 100%;
     height: 5em;
   }
   footer{
@@ -163,6 +169,23 @@
     background-color: black;
     height: 100px;
     color: grey;
+  }
+  img{
+    width: 50%;
+  }
+  @media only screen and (max-width: 500px) {
+    img {
+      width: 100%;
+    }
+    form{
+      margin-inline: 1%;
+    }
+    textarea{
+      width: 90%;
+    }
+    select{
+      width: 90%;
+    }
   }
 </style>
 </body>
