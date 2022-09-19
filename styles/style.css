@@ -2,7 +2,6 @@
   font-family: ibm3270;
   src: url(../fonts/3270-Regular.ttf);
 }
-
 html {
   width: auto;
   height: auto;
@@ -19,7 +18,7 @@ body {
   color: aliceblue;
   width: auto;
   height: auto;
-  background-image: url(../images/back3.png);
+  background-image: url(../images/background.png);
   display: flex;
   flex-direction: column;
 }
@@ -28,6 +27,8 @@ form {
   text-align: center;
   margin: auto;
   border: 1px solid white;
+  margin-bottom: 50px;
+  width: fit-content;
 }
 input:not([type~="submit"]) {
   outline: none;
@@ -60,15 +61,38 @@ textarea {
   outline: none;
   background-color: #A0A5A0;
   width: 90%;
-  max-width: 100%;
+  max-width: 250px;
   height: 5em;
 }
-footer {
-  margin-top: 50px;
+footer, header {
   background-color: rgba(29, 29, 29, 0.842);
-  height: 100px;
+  height: 150px;
   color: grey;
   display: flex;
+  filter: drop-shadow(0px 30px 40px rgb(0, 0, 0));
+}
+main{
+  max-width: 960px;
+  margin: auto;
+  align-content: center;
+}
+nav{
+  display: flex;
+  filter: drop-shadow(0px 30px 40px rgb(0, 0, 0));
+  background-color: rgba(29, 29, 29, 0.842);
+  border-top: 1px solid rgb(41, 41, 41);
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  width: -webkit-fill-available;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+nav a:hover{
+  background-color: rgba(30,30,30);
+  transition: 0.4s ease;
 }
 #linkImg {
   width: 50%;
@@ -79,10 +103,35 @@ footer {
   text-align: center;
 }
 #footerDiv{
+  margin: auto; 
+  display: flex; 
+  flex-direction: column;
+}
+#logoImg{
+  background-color: rgba(32, 32, 32, 0.842);
+  border-radius: 50%;
+    
+}
+table{
+  border: 1px solid gold;
+  border-spacing: 0;
   margin: auto;
+}
+td,th{
+  border: 1px dashed gold;
+  text-align: center;
+}
+tr:nth-child(even){
+  background-color: darkred;
+}
+tr:nth-child(odd){
+  background-color: darkslategray;
 }
 @media only screen and (max-width: 500px) {
   #linkImg {
     width: 100%;
+  }
+  h1{
+    font-size: 1.5em;
   }
 }
