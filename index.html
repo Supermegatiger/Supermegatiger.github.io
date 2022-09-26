@@ -5,14 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Сайт</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="shortcut icon" type="image/png" href="/images/cat_logo.png" >
+  <link rel="shortcut icon" type="image/png" href="images/cat_logo.png" >
 </head>
 <body>
   <header>
     <div style="margin: auto; width: 960px;">
       <div style="margin: auto; display: flex;">
-      <a style="margin-right: 10px;" href="/">
-        <img id="logoImg" src="/images/cat_logo.png" width="80" height="80" alt="logo">
+      <a style="margin: 10px;" href="/">
+        <img id="logoImg" src="images/cat_logo.png" width="80" height="80" alt="logo">
       </a>
       <h1 style="float: right; margin: auto 0;">Какое-то название сайта</h1>
     </div> </div>
@@ -24,8 +24,8 @@
     <a href="#mainTable">Таблица</a>
     <a href="#mainForm">Форма</a>
   </nav>
-  <h2>Список ссылок</h2>
-  <div >
+  <div  class="items-content">
+    <h2>Список ссылок</h2>
   <ol id="links">
     <li><a href="http://example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
     <li><a href="https://example.com">абсолютная на главную сайта example.com в протоколе https</a></li>
@@ -66,6 +66,7 @@
     <li><a href="/2.html">сокращенная ссылка на внутреннюю</a></li>
   </ol>
   </div>
+  <div class="items-content" id="table">
   <h2>Таблица</h2>
   <table id="mainTable">
     <tr>
@@ -79,12 +80,11 @@
     </tr>
     <tr>
       <td>Ячейка 21</td>
-      <td>Ячейка 22</td>
+      <td rowspan="2">Ячейка 22 объединенная с 32</td>
       <td>Ячейка 23</td>
     </tr>
     <tr>
       <td>Ячейка 31</td>
-      <td>Ячейка 32</td>
       <td>Ячейка 33</td>
     </tr>
     <tr>
@@ -97,6 +97,8 @@
       <td colspan="2">Ячейка 52 объединенная с 53</td>
     </tr>
   </table>
+  </div>
+  <div  class="items-content">
   <h2>Форма</h2>
   <form id="mainForm">
     <label>
@@ -169,6 +171,7 @@
     
     <input type="submit" value="Отправить"/>
   </form>
+  </div>
 </main>
 <footer>
   <div id="footerDiv">
