@@ -1,0 +1,57 @@
+@font-face {
+    font-family: ibm3270;
+    src: url(../fonts/3270-Regular.ttf);
+}
+html {
+    width: auto;
+    height: auto;
+  }
+  *::selection{
+    background-color: rgb(78, 118, 250);
+  }
+  h2 {
+    text-align: center;
+  }
+  body {
+    margin: 0 0;
+    font: 20px ibm3270;
+    color: aliceblue;
+    width: auto;
+    height: auto;
+    background-image: url(../images/background.png);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="button"] {
+    font-size: 20px;
+  }
+  input::placeholder {
+    color: darkgray;
+  }
+  input{
+    border: none!important;
+    box-shadow: none!important;
+  }
+  input:invalid{
+    transition: 0.5s all ease;
+    box-shadow: 0 0 10px red !important;
+  }
+  footer, header {
+    background-color: rgba(29, 29, 29, 0.842);
+    height: 150px;
+    color: grey;
+    display: flex;
+    filter: drop-shadow(0px 30px 40px rgb(0, 0, 0));
+  }
+
+  #footerLink {
+    text-decoration: none;
+    color: dimgrey;
+    text-align: center;
+  }
+
+  #logoImg{
+    background-color: rgba(32, 32, 32, 0.842);
+    border-radius: 50%;
+  }

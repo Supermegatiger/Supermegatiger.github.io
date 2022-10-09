@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>5 задание</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style5.css">
+  <link rel="shortcut icon" type="image/png" href="images/cat_logo.png" >
+  <script src="scripts/calc.js" defer></script>
+</head>
+<body style="height: 100vh;">
+  <header>
+    <div style="margin: auto;">
+      <div style="margin: auto; display: flex;">
+      <a style="margin: 10px;" href="/">
+        <img id="logoImg" src="images/cat_logo.png" width="80" height="80" alt="logo">
+      </a>
+      <h1 style="font-weight:600; float: right; margin: auto 0;">Какое-то название сайта</h1>
+    </div> </div>
+  </header>
+<main class="m-auto row col-12 col-md-11 col-lg-7 p-0">
+  <div class="items-content px-3">
+    <h2>Калькулятор</h2>
+    <br>
+    <h2 id="answer"></h2>
+    <br>
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="price" class="form-label">Цена товара</label>
+            <input type="text" class="form-control" id="price" pattern="^\d+$">
+        </div>
+        <div class="col-md-6">
+            <label for="count" class="form-label">Кол-во товара</label>
+            <input type="text" class="form-control" id="count" pattern="^\d+$">
+        </div>
+    <input id="calculate" type="button" class="btn btn-success col-6 mx-auto" value="Рассчитать"/>
+  </form>
+  </div>
+</main>
+<footer>
+  <div class="d-flex m-auto flex-column">
+    <a id="footerLink" href="https://github.com/Supermegatiger">(c) Тигран Айрапетов</a>
+      All rights reserved (false)
+  </div>
+</footer>
+</body>
+</html>
