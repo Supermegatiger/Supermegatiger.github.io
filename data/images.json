@@ -1,0 +1,18 @@
+[
+    {"image": "../images/space_images/jupiter.jpg", "name":"Jupiter in Ganymede's Shadow"}, 
+    {"image": "../images/space_images/stellar_nursery.jpg", "name": "A Stormy Stellar Nursery"},
+    {"image": "../images/space_images/spiral.jpg", "name": "Hubble Studies a Spectacular Spiral"},
+    {"image": "../images/space_images/night_cities.jpg", "name": "Mediterranean Cities Light Up the Night"},
+    {"image": "../images/space_images/cosmic_tarantula.png", "name": "A Cosmic Tarantula, Caught by NASA's Webb"},
+    {"image": "../images/space_images/earth_on_the_horizon.jpg", "name": "Apollo 15 Catches Earth on the Horizon"},
+    {"image": "../images/space_images/milky_way.jpg", "name": "Milky Way Time Lapse"},
+    {"image": "../images/space_images/great_red_spot.jpg", "name": "Voyager 1 Sees the Great Red Spot"},
+    {"image": "../images/space_images/perennial_perseids.jpg", "name": "Perennial Perseids"},
+    {"image": "../images/space_images/blackholefirst.png", "name": "First image of Black Hole"},
+    {"image": "../images/space_images/spiral_galaxy.jpg", "name": "Hubble's Double Take on a Spiral Galaxy"},
+    {"image": "../images/space_images/star_jets.jpg", "name": "Hubble Snaps Speedy Star Jets"},
+    {"image": "../images/space_images/dusty_stellar_nursery.jpg", "name": "Hubble Peers into a Dusty Stellar Nursery"},
+    {"image": "../images/space_images/moon.jpg", "name": "NASA Gazes at the Strawberry Moon"},
+    {"image": "../images/space_images/turbulent_stellar_nursery.jpg", "name": "Hubble Views a Turbulent Stellar Nursery"},
+    {"image": "../images/space_images/astronomical_explosion.jpg", "name": "Hubble Unveils an Astronomical Explosion"}
+]

@@ -1,0 +1,12 @@
+
+  .slick-dots li.slick-active button:before {
+    color:White !important;
+  }
+  .slick-dots li button:before {
+    color:White !important;
+  }
+  .divImgs{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
